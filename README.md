@@ -1,5 +1,12 @@
 # MCP Cloud Operations Agent
 
+## Overview
+
+An MCP tool server for cloud operations that exposes read tools only. `GET /tools` lists `list_gke`, `describe_vm` and `get_billing`, and `POST /call` runs one of them; any request to apply changes is refused. It shows how an agent can inspect GKE clusters, VMs and billing without being able to change them.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop proof with tests; it calls no hosted model and refuses apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
